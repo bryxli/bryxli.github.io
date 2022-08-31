@@ -1,0 +1,14 @@
+
+- name: Projects
+  projects:
+    - name: Zoe Bot
+      description: This Discord bot, using SQLite, Discord API, and Riot Games API, looks through registered users for newly completed games and displays them.
+      github: bryxli/zoe-bot
+      documentation: https://bryxli.github.io/zoe-bot/
+      homepage: https://top.gg/bot/1014214102459093105
+      image: ../zoe.png
+    - name: NFL Database
+      description: Database of all NFL players in the 2020 season. Users can create a personalized list to keep track of their favorite players.
+      github: bryxli/nfl-database
+      icon: fas fa-football-ball
+

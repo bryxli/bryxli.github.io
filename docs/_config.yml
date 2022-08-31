@@ -3,7 +3,8 @@ email: bryanxli00@gmail.com
 description: >- 
   Software Engineer
 url: "https://bryxli.github.io"
-github_username:  bryxli
+github_username: bryxli
+linkedin_username: bryxli
 remote_theme: tedivm/jekyll-theme-portfolio
 plugins:
   - jekyll-feed
