@@ -1,4 +1,12 @@
 
+- name: Work Experience
+  experiences:
+    - name: Developer
+      description: Madison, WI<span></span>Part-time 09/2021 - Present<span></span><ul><li>Migrated Microsoft SQL Server onto Google Cloud and
+automated tasks using Cloud Composer</li><li>Generated a live density map of user locations, extracting data
+using Google Tag Manager and Google Analytics.</li><li>Implemented a generic script to add resilience to SQL systems.</li><li>Accomplished using Python, JavaScript, and SQL.
+</li>
+
 - name: Projects
   projects:
     - name: Zoe Bot
@@ -11,4 +19,4 @@
       description: Database of all NFL players in the 2020 season. Users can create a personalized list to keep track of their favorite players.
       github: bryxli/nfl-database
       icon: fas fa-football-ball
-
+  
