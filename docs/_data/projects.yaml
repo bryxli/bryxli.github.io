@@ -20,7 +20,7 @@
 - name: Projects
   projects:
     - name: Zoe Bot
-      description: This Discord bot, using SQLite, Discord API, and Riot Games API, looks through registered users for newly completed games and displays them.
+      description: Chatbot built on SQLite, Discord API, and Riot Games API, that looks through registered users for newly completed games and displays them.
       github: bryxli/zoe-bot
       documentation: https://top.gg/bot/1014214102459093105
       homepage: https://bryxli.github.io/zoe-bot/
