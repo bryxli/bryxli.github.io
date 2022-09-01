@@ -8,4 +8,5 @@ Full-stack engineer with experience using React, Vue, Node, and Spring Boot. App
 
 Additionally also experienced with data engineering using Python and R. Many of my projects at the Wisconsin School of Business were written in Python and interacted with Cloud SQL. 
 
-Big fan of Agile development using Scrum and Kanban. I believe that communication is the most underappreciated skill in the workplace and these methodologies drastically increase the productivity of a team. At Capital One, I was a part of a scrum team where we would complete weekly sprints, each one with all the components of a full sprint cycle.
+Big fan of Agile development using Scrum and Kanban. I believe that communication is the most underappreciated skill in the workplace and these methodologies drastically increase the productivity of a team. At Capital One, I was a part of a scrum team where we would complete weekly sprints, each one with all the components of a full sprint cycle.  
+
