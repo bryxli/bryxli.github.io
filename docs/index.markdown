@@ -10,5 +10,3 @@ Additionally also experienced with data engineering using Python and R. Many of 
 
 Big fan of Agile development using Scrum and Kanban. I believe that communication is the most underappreciated skill in the workplace and these methodologies drastically increase the productivity of a team. At Capital One, I was a part of a scrum team where we would complete weekly sprints, each one with all the components of a full sprint cycle.  
 
-![](https://raw.githubusercontent.com/bryxli/github-stats/master/generated/overview.svg)
-![](https://raw.githubusercontent.com/bryxli/github-stats/master/generated/languages.svg)
