@@ -30,3 +30,14 @@
       github: bryxli/nfl-database
       icon: fas fa-football-ball
 
+- name: Certificates
+  projects:
+    - name: Certified Secure Software Engineer - Associate
+      description: Capital One
+      documentation: https://drive.google.com/file/d/1QLKXozwSBgyDipj5IP4NlH1HgYMxDjSY/view?usp=sharing
+      image: ../capital one.png
+    - name: Full-Stack Web Development with React Specialization
+      description: Coursera
+      documentation: https://www.coursera.org/account/accomplishments/specialization/certificate/ZG4ZW8WN2UYK
+      image: ../cousera.png
+
