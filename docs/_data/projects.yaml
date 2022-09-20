@@ -2,7 +2,7 @@
 - name: Education
   projects:
     - name: B.S. Computer Science / Data Science / Digital Studies
-      description: University of Wisconsin-Madison<br>Madison, WI<br>08/2019 - 05/2023<br>3.5 GPA<div class="navbar"><div class="subnav"><button class="subnavbtn">Relevant Courses</button><div class="subnav-content"><li><a href="https://docs.google.com/document/d/1cux9MeXMRbNAO-j5OwjKAFHUEt1juDMUG6htVQRz7q4/edit?usp=sharing">Algorithms</a></li><li>Artificial Intelligence</li><li>Software Engineering</li><li>Software Security</li><li><a href="https://github.com/bryxli/CS559-Computer-Graphics">Computer Graphics</a></li><li><a href="https://drive.google.com/drive/folders/1PjzQaTSnhzrfoWXp5j_qlG0EFqTFCYOk?usp=sharing">Cryptography</a></li><li>Virtual Reality</li></div></div></div>
+      description: University of Wisconsin-Madison<br>Madison, WI<br>08/2019 - 05/2023<br>3.5 GPA<ul>Relevant Courses<li><a href="https://docs.google.com/document/d/1cux9MeXMRbNAO-j5OwjKAFHUEt1juDMUG6htVQRz7q4/edit?usp=sharing">Algorithms</a></li><li>Artificial Intelligence</li><li>Software Engineering</li><li>Software Security</li><li><a href="https://github.com/bryxli/CS559-Computer-Graphics">Computer Graphics</a></li><li><a href="https://drive.google.com/drive/folders/1PjzQaTSnhzrfoWXp5j_qlG0EFqTFCYOk?usp=sharing">Cryptography</a></li><li>Virtual Reality</li></ul>
       image: ../uw.jpg
       homepage: https://www.wisc.edu/
 
