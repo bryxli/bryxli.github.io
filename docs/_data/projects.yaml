@@ -4,18 +4,22 @@
     - name: B.S. Computer Science / Data Science / Digital Studies
       description: University of Wisconsin-Madison<br>Madison, WI<br>08/2019 - 05/2023<br>3.5 GPA<div class = "dropdown show"><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Relevant Courses</button><ul class="dropdown-menu"><li><a href="https://docs.google.com/document/d/1cux9MeXMRbNAO-j5OwjKAFHUEt1juDMUG6htVQRz7q4/edit?usp=sharing">Algorithms</a></li><li>Artificial Intelligence</li><li>Software Engineering</li><li>Software Security</li><li><a href="https://github.com/bryxli/CS559-Computer-Graphics">Computer Graphics</a></li><li><a href="https://drive.google.com/drive/folders/1PjzQaTSnhzrfoWXp5j_qlG0EFqTFCYOk?usp=sharing">Cryptography</a></li><li>Virtual Reality</li></ul></div>
       image: ../uw.jpg
+      homepage: https://www.wisc.edu/
 
 - name: Work Experience
   projects:
     - name: Wisconsin School of Business
       description: Developer, Part-time<br>Madison, WI<br>09/2021 - Present<br><ul><li>Migrated Microsoft SQL Server onto Google Cloud and automated tasks using Cloud Composer</li><li>Generated a live density map of user locations, extracting data using Google Tag Manager and Google Analytics.</li><li>Implemented a generic script to add resilience to SQL systems.</li><li>Accomplished using Python, JavaScript, and SQL.</li>
       image: ../wsb.jpg
+      homepage: https://business.wisc.edu/
     - name: Capital One
       description: Technology Internship Program, Internship<br>Chicago, IL<br>06/2022 - 08/2022<br><ul><li>Implemented a Feature Decision Engine to extract complex UI decision rules and workflow into a module and simplify the process of configuring new/modified rules.</li><li>Expedited development cycles, improved developer experience, and hastened time to market.</li><li>Accomplished using Vue, Node, and AWS.</li></ul><br>
       image: ../capital one.png
+      homepage: https://www.capitalone.com/
     - name: Wondfo USA
       description: IT Support Technician, Internship<br>Willowbrook, IL<br>06/2021 - 08/2021<br><ul><li>Diagnosed and fixed computer issues.</li><li>Set up systems for new employees, including Now Commerce and QuickBooks.</li><li>Wrote an Excel macro to automate worker insurance processing.</li></ul><br><br><br><br><br>
       image: ../wondfousa.jpg
+      homepage: https://www.wondfousa.com/
 
 - name: Projects
   projects:
