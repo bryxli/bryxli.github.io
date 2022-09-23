@@ -1,11 +1,3 @@
-
-- name: Education
-  projects:
-    - name: B.S. Computer Science / Data Science / Digital Studies
-      description: University of Wisconsin-Madison<br>Madison, WI<br>08/2019 - 05/2023<br>3.5 GPA<br>Relevant Courses<li><a href="https://docs.google.com/document/d/1cux9MeXMRbNAO-j5OwjKAFHUEt1juDMUG6htVQRz7q4/edit?usp=sharing">Algorithms</a></li><li><a href=#>Artificial Intelligence</a></li><li><a href=#>Software Engineering</a></li><li><a href=#>Software Security</a></li><li><a href="https://github.com/bryxli/CS559-Computer-Graphics">Computer Graphics</a></li><li><a href="https://drive.google.com/drive/folders/1PjzQaTSnhzrfoWXp5j_qlG0EFqTFCYOk?usp=sharing">Cryptography</a></li><li><a href=#>Virtual Reality</a></li>
-      image: ../uw.jpg
-      homepage: https://www.wisc.edu/
-
 - name: Work Experience
   projects:
     - name: Wisconsin School of Business
@@ -26,8 +18,8 @@
     - name: Zoe Bot
       description: Chatbot built on SQLite, Discord API, and Riot Games API, that looks through registered users for newly completed games and displays them.
       github: bryxli/zoe-bot
-      documentation: https://top.gg/bot/1014214102459093105
-      homepage: https://bryxli.github.io/zoe-bot/
+      documentation: https://bryxli.github.io/zoe-bot/
+      homepage: https://top.gg/bot/1014214102459093105
       image: ../zoe.png
     - name: NFL Database
       description: Database of all NFL players in the 2020 season. Users can create a personalized list to keep track of their favorite players.<br>
@@ -45,3 +37,9 @@
       documentation: https://www.coursera.org/account/accomplishments/specialization/certificate/ZG4ZW8WN2UYK
       image: ../coursera.png
 
+- name: Education
+  projects:
+    - name: B.S. Computer Science / Data Science / Digital Studies
+      description: University of Wisconsin-Madison<br>Madison, WI<br>08/2019 - 05/2023<br>3.5 GPA<br>Relevant Courses<li><a href="https://docs.google.com/document/d/1cux9MeXMRbNAO-j5OwjKAFHUEt1juDMUG6htVQRz7q4/edit?usp=sharing">Algorithms</a></li><li><a href=#>Artificial Intelligence</a></li><li><a href=#>Software Engineering</a></li><li><a href=#>Software Security</a></li><li><a href="https://github.com/bryxli/CS559-Computer-Graphics">Computer Graphics</a></li><li><a href="https://drive.google.com/drive/folders/1PjzQaTSnhzrfoWXp5j_qlG0EFqTFCYOk?usp=sharing">Cryptography</a></li><li><a href=#>Virtual Reality</a></li>
+      image: ../uw.jpg
+      homepage: https://www.wisc.edu/
