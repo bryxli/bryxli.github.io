@@ -2,3 +2,5 @@
 .prettierignore
 *.svg
 *.lock
+**/public/*
+**/assets/*
