@@ -1,20 +1,6 @@
 ---
 import ProjectList from "../Projects/ProjectList";
-
-const placeholder_projects = [
-  {
-    title: "title_0",
-    text: "text_0",
-  },
-  {
-    title: "title_1",
-    text: "text_1",
-  },
-  {
-    title: "title_2",
-    text: "text_2",
-  },
-];
+import projects from "../../data/projects.json";
 ---
 
 <div class="page center full-page" id="landing">
@@ -33,7 +19,7 @@ const placeholder_projects = [
   <div class="bg">
     <h1 class="heading-3">Projects</h1>
     <div class="project-list">
-      <ProjectList client:load projects={placeholder_projects} />
+      <ProjectList client:load projects={projects} />
     </div>
   </div>
 </div>

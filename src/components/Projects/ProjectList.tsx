@@ -7,7 +7,9 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
     useState<ProjectProps | null>(null);
 
   const handleSelect = (project: ProjectProps) => {
-    setCurrentlySelected(project);
+    currentlySelected === project
+      ? setCurrentlySelected(null)
+      : setCurrentlySelected(project);
   };
 
   return (
@@ -16,7 +18,11 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
         <ProjectInfo
           key={index}
           title={project.title}
-          text={project.text}
+          description={project.description}
+          techStack={project.techStack}
+          repoLink={project.repoLink}
+          liveLink={project.liveLink}
+          image={project.image}
           isSelected={currentlySelected === project}
           onSelect={() => handleSelect(project)}
         />

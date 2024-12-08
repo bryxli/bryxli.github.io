@@ -1,8 +1,12 @@
 export interface ProjectProps {
   title: string;
-  text: string;
-  isSelected: boolean;
-  onSelect: () => void;
+  description: string;
+  techStack?: string[];
+  repoLink?: string;
+  liveLink?: string;
+  image?: string;
+  isSelected?: boolean;
+  onSelect?: () => void;
 }
 
 export interface ProjectListProps {
