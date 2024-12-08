@@ -1,0 +1,53 @@
+[
+  {
+    "title": "zoe-bot",
+    "description": "Discord bot that traverses through the Riot Games API; processes user input into game information with customizable real-time output. 100% serverless, with resources being provisioned through a tailored CI/CD pipeline. Fully tested with demonstrated scalability and resilience. Currently serving 30+ Discord guilds worldwide.",
+    "technologies": [
+      "python",
+      "typescript",
+      "flask",
+      "nextjs",
+      "lambda",
+      "dynamodb",
+      "s3",
+      "cloudfront",
+      "sst",
+      "github-actions"
+    ],
+    "repoLink": "https://github.com/bryxli/zoe-bot",
+    "liveLink": "https://dvm0lawze91bo.cloudfront.net/",
+    "image": "src/assets/zoe-bot.ico"
+  },
+  {
+    "title": "discord-active-developer-badge",
+    "description": "Discord slash bot template intended to be hosted on Replit. Offers a way to obtain the Discord Active Developer Badge without any programming.",
+    "technologies": ["typescript", "express"],
+    "repoLink": "https://github.com/bryxli/discord-active-developer-badge",
+    "image": "src/assets/discord-active-developer-badge.svg"
+  },
+  {
+    "title": "MadCourseEvaluator",
+    "description": "Web application that compiles information about information at classes at the University of Wisconsin-Madison. Information is retrieved from the University of Wisconsin-Madison course page, Madgrades, Rate My Professors, and Reddit.",
+    "technologies": ["python", "javascript", "flask", "react", "mysql", "rds"],
+    "repoLink": "https://github.com/bryxli/MadCourseEvaluator",
+    "image": "src/assets/mad-course-evaluator.png"
+  },
+  {
+    "title": "grades-analysis",
+    "description": "Analysis of maths grades and the variables affecting student drop out rate.",
+    "technologies": ["r"],
+    "repoLink": "https://github.com/bryxli/grades-analysis"
+  },
+  {
+    "title": "covid-19-analysis",
+    "description": "Analysis of COVID-19 and the correlation between population density and positive cases.",
+    "technologies": ["r"],
+    "repoLink": "https://github.com/bryxli/covid19-analysis"
+  },
+  {
+    "title": "nfl-database",
+    "description": "Database of all NFL players in the 2020 season. Allows user to look up specific player statistics and add them to a personalized list.",
+    "technologies": ["java"],
+    "repoLink": "https://github.com/bryxli/nfl-database"
+  }
+]

@@ -1,16 +1,30 @@
-<div class="landing-page" id="landing">
-  <div class="landing-container">
+---
+import ProjectList from "../Projects/ProjectList";
+import projects from "../../data/projects.json";
+---
+
+<div class="page center full-page" id="landing">
+  <div class="container">
     <h1 class="heading-1">Hello, I'm <span>Bryan.</span></h1>
     <p class="heading-2">
       Full Stack Software Engineer, AWS Solutions Architect
     </p>
-    <a href="#projects" class="btn-landing btn-white btn-animated"
-      >View my Work</a
-    >
+    <a href="#projects" class="btn-landing btn-white btn-animated">
+      View my Work
+    </a>
   </div>
 </div>
 
-<div class="new-page" id="projects"></div>
+<div class="page center" id="projects">
+  <div class="bg">
+    <h1 class="heading-3">Projects</h1>
+    <div class="project-list">
+      <ProjectList client:load projects={projects} />
+    </div>
+  </div>
+</div>
+
+<!-- <div class="page full-page"></div> -->
 
 <style>
   * {
@@ -28,25 +42,32 @@
     color: white;
   }
 
-  .new-page {
+  .page {
     display: flex;
-    height: 100vh;
     width: 100%;
   }
 
-  .landing-page {
-    display: flex;
-    height: 100%;
-    width: 100%;
+  .center {
     justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 
-  .landing-container {
+  .full-page {
+    height: 100vh;
+  }
+
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .bg {
+    background: rgba(28, 44, 53, 0.7);
+    width: 80%;
   }
 
   .heading-1 {
@@ -64,6 +85,15 @@
     font-size: 2.4rem;
     margin-bottom: 4.2rem;
     animation: moveInRight 1.4s;
+  }
+
+  .heading-3 {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+  }
+
+  .project-list {
+    margin-top: 2rem;
   }
 
   .btn-landing {
