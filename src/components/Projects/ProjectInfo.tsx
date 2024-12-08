@@ -1,11 +1,12 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import Icon from "./Icon";
 import type { ProjectProps } from "./types";
 
 const ProjectInfo: React.FC<ProjectProps> = ({
   title,
   description,
-  techStack,
+  technologies,
   repoLink,
   liveLink,
   image,
@@ -37,9 +38,22 @@ const ProjectInfo: React.FC<ProjectProps> = ({
           <Card.Text style={{ fontSize: "1rem", color: "#555" }}>
             {description}
           </Card.Text>
-          {techStack && (
-            <div>
-              <strong>Tech Stack:</strong> {techStack}
+          {technologies && (
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                paddingBottom: "0.5rem",
+              }}
+            >
+              {technologies.map((technology) => {
+                return (
+                  <div style={{ paddingRight: "1em" }} key={technology}>
+                    <Icon name={technology} />
+                  </div>
+                );
+              })}
             </div>
           )}
           {repoLink && (
@@ -59,7 +73,6 @@ const ProjectInfo: React.FC<ProjectProps> = ({
 
           {image && (
             <Card.Img
-              variant="right"
               src={image}
               alt={`${title} thumbnail`}
               style={{

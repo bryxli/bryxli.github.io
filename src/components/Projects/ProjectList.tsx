@@ -19,7 +19,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
           key={index}
           title={project.title}
           description={project.description}
-          techStack={project.techStack}
+          technologies={project.technologies}
           repoLink={project.repoLink}
           liveLink={project.liveLink}
           image={project.image}

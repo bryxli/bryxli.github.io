@@ -1,7 +1,7 @@
 export interface ProjectProps {
   title: string;
   description: string;
-  techStack?: string[];
+  technologies?: string[];
   repoLink?: string;
   liveLink?: string;
   image?: string;
@@ -11,4 +11,8 @@ export interface ProjectProps {
 
 export interface ProjectListProps {
   projects: ProjectProps[];
+}
+
+export interface IconProps {
+  name: string;
 }
