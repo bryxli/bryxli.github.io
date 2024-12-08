@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
+import Card from "react-bootstrap/cjs/Card.js";
 import Icon from "./Icon";
 import type { ProjectProps } from "./types";
 
