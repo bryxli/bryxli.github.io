@@ -1,0 +1,6 @@
+.husky
+.prettierignore
+*.svg
+*.lock
+**/public/*
+**/assets/*
