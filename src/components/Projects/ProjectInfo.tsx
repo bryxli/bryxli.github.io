@@ -32,6 +32,17 @@ const ProjectInfo: React.FC<ProjectProps> = ({
         }}
       >
         <Card.Body>
+          {image && (
+            <Card.Img
+              src={image}
+              alt={`${title} thumbnail`}
+              style={{
+                height: "10%",
+                width: "10%",
+                objectFit: "cover",
+              }}
+            />
+          )}
           <Card.Title style={{ fontSize: "1.25rem", fontWeight: "bold" }}>
             {title}
           </Card.Title>
@@ -69,18 +80,6 @@ const ProjectInfo: React.FC<ProjectProps> = ({
                 View Live
               </a>
             </div>
-          )}
-
-          {image && (
-            <Card.Img
-              src={image}
-              alt={`${title} thumbnail`}
-              style={{
-                height: "10%",
-                width: "10%",
-                objectFit: "cover",
-              }}
-            />
           )}
         </Card.Body>
       </Card>

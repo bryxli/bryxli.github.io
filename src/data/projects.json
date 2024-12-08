@@ -16,21 +16,21 @@
     ],
     "repoLink": "https://github.com/bryxli/zoe-bot",
     "liveLink": "https://dvm0lawze91bo.cloudfront.net/",
-    "image": "src/assets/zoe-bot.ico"
+    "image": "/projects/zoe-bot.ico"
   },
   {
     "title": "discord-active-developer-badge",
     "description": "Discord slash bot template intended to be hosted on Replit. Offers a way to obtain the Discord Active Developer Badge without any programming.",
     "technologies": ["typescript", "express"],
     "repoLink": "https://github.com/bryxli/discord-active-developer-badge",
-    "image": "src/assets/discord-active-developer-badge.svg"
+    "image": "/projects/discord-active-developer-badge.svg"
   },
   {
     "title": "MadCourseEvaluator",
     "description": "Web application that compiles information about information at classes at the University of Wisconsin-Madison. Information is retrieved from the University of Wisconsin-Madison course page, Madgrades, Rate My Professors, and Reddit.",
     "technologies": ["python", "javascript", "flask", "react", "mysql", "rds"],
     "repoLink": "https://github.com/bryxli/MadCourseEvaluator",
-    "image": "src/assets/mad-course-evaluator.png"
+    "image": "/projects/mad-course-evaluator.png"
   },
   {
     "title": "grades-analysis",
