@@ -32,45 +32,6 @@ const ProjectInfo: React.FC<ProjectProps> = ({
         }}
       >
         <Card.Body>
-          <Card.Title style={{ fontSize: "1.25rem", fontWeight: "bold" }}>
-            {title}
-          </Card.Title>
-          <Card.Text style={{ fontSize: "1rem", color: "#555" }}>
-            {description}
-          </Card.Text>
-          {technologies && (
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                paddingBottom: "0.5rem",
-              }}
-            >
-              {technologies.map((technology) => {
-                return (
-                  <div style={{ paddingRight: "1em" }} key={technology}>
-                    <Icon name={technology} />
-                  </div>
-                );
-              })}
-            </div>
-          )}
-          {repoLink && (
-            <div>
-              <a href={repoLink} target="_blank" rel="noopener noreferrer">
-                View on GitHub
-              </a>
-            </div>
-          )}
-          {liveLink && (
-            <div>
-              <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                View Live
-              </a>
-            </div>
-          )}
-
           {image && (
             <Card.Img
               src={image}
@@ -82,6 +43,45 @@ const ProjectInfo: React.FC<ProjectProps> = ({
               }}
             />
           )}
+          <Card.Title style={{ fontSize: "1.25rem", fontWeight: "bold" }}>
+            {title}
+          </Card.Title>
+          <Card.Text style={{ fontSize: "1rem", color: "#555" }}>
+            {description}
+          </Card.Text>
+          {technologies && (
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: "1rem",
+                paddingBottom: "0.5rem",
+              }}
+            >
+              {technologies.map((technology) => (
+                <Icon name={technology} key={technology} />
+              ))}
+            </div>
+          )}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "1rem",
+              justifyContent: "center",
+            }}
+          >
+            {repoLink && (
+              <a href={repoLink} target="_blank" rel="noopener noreferrer">
+                <Icon name="github" />
+              </a>
+            )}
+            {liveLink && (
+              <a href={liveLink} target="_blank" rel="noopener noreferrer">
+                <Icon name="live" />
+              </a>
+            )}
+          </div>
         </Card.Body>
       </Card>
     </div>
