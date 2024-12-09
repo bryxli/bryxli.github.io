@@ -57,10 +57,10 @@ const renderIcon = (name: string) => {
 
 const Icon: React.FC<IconProps> = ({ name, nametag = false }) => {
   return (
-    <a>
+    <div>
       {renderIcon(name)}
       {nametag && <div>{name}</div>}
-    </a>
+    </div>
   );
 };
 

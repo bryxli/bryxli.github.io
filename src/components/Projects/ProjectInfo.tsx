@@ -59,7 +59,7 @@ const ProjectInfo: React.FC<ProjectProps> = ({
               }}
             >
               {technologies.map((technology) => (
-                <Icon name={technology} key={technology} />
+                <Icon name={technology} nametag={true} key={technology} />
               ))}
             </div>
           )}

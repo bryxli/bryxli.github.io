@@ -17,3 +17,7 @@ export interface IconProps {
   name: string;
   nametag?: boolean;
 }
+
+export interface OptionsProps {
+  initialColor: string;
+}
