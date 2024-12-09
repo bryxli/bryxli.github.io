@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/cjs/Card.js";
-import Icon from "./Icon";
-import type { ProjectProps } from "./types";
+import Icon from "../common/react/Icon";
+import type { ProjectProps } from "../common/types";
 
 const ProjectInfo: React.FC<ProjectProps> = ({
   title,

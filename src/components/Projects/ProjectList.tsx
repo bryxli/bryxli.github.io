@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ProjectInfo from "./ProjectInfo";
-import type { ProjectListProps, ProjectProps } from "./types";
+import type { ProjectListProps, ProjectProps } from "../common/types";
 
 const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
   const [currentlySelected, setCurrentlySelected] =

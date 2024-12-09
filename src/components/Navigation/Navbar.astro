@@ -1,3 +1,7 @@
+---
+import Options from "./Options";
+---
+
 <header class="navbar">
   <div class="logo">
     <a href="/">bryxli.github.io</a>
@@ -8,18 +12,17 @@
       <li><a href="/about">About</a></li>
       <li><a href="/services">Services</a></li>
       <li><a href="/contact">Contact</a></li>
+      <li><Options client:only="react" /></li>
     </ul>
   </nav>
 </header>
 
 <style>
   .navbar {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    color: white;
   }
 
   .logo a {

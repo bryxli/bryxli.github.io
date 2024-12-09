@@ -15,4 +15,5 @@ export interface ProjectListProps {
 
 export interface IconProps {
   name: string;
+  nametag?: boolean;
 }
