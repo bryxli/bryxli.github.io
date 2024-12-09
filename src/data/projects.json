@@ -12,7 +12,7 @@
       "s3",
       "cloudfront",
       "sst",
-      "github-actions"
+      "github actions"
     ],
     "repoLink": "https://github.com/bryxli/zoe-bot",
     "liveLink": "https://dvm0lawze91bo.cloudfront.net/",
@@ -35,13 +35,13 @@
   {
     "title": "grades-analysis",
     "description": "Analysis of maths grades and the variables affecting student drop out rate.",
-    "technologies": ["r"],
+    "technologies": ["R"],
     "repoLink": "https://github.com/bryxli/grades-analysis"
   },
   {
     "title": "covid-19-analysis",
     "description": "Analysis of COVID-19 and the correlation between population density and positive cases.",
-    "technologies": ["r"],
+    "technologies": ["R"],
     "repoLink": "https://github.com/bryxli/covid19-analysis"
   },
   {

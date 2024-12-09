@@ -53,34 +53,35 @@ const ProjectInfo: React.FC<ProjectProps> = ({
             <div
               style={{
                 display: "flex",
-                flexDirection: "row",
                 justifyContent: "center",
+                gap: "1rem",
                 paddingBottom: "0.5rem",
               }}
             >
-              {technologies.map((technology) => {
-                return (
-                  <div style={{ paddingRight: "1em" }} key={technology}>
-                    <Icon name={technology} />
-                  </div>
-                );
-              })}
+              {technologies.map((technology) => (
+                <Icon name={technology} key={technology} />
+              ))}
             </div>
           )}
-          {repoLink && (
-            <div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "1rem",
+              justifyContent: "center",
+            }}
+          >
+            {repoLink && (
               <a href={repoLink} target="_blank" rel="noopener noreferrer">
-                View on GitHub
+                <Icon name="github" />
               </a>
-            </div>
-          )}
-          {liveLink && (
-            <div>
+            )}
+            {liveLink && (
               <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                View Live
+                <Icon name="live" />
               </a>
-            </div>
-          )}
+            )}
+          </div>
         </Card.Body>
       </Card>
     </div>
