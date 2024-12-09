@@ -26,7 +26,7 @@
       </h3>
       <p>
         Hey there! I'm Bryan, local full stack engineer and cloud connoisseur
-        located in Chicago. I graduated from the University of Wisconsin-Madison
+        based in Chicago. I graduated from the University of Wisconsin-Madison
         with a B.S. in computer science, data science, and digital studies. I
         love exploring new tools and technologies. On this site, you can find
         various projects that I have been working on. Please feel free to
