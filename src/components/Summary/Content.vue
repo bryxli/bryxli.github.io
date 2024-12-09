@@ -2,29 +2,44 @@
   <div class="summary-content">
     <img src="/summary/self.jpg" alt="portrait" class="summary-image" />
     <div class="summary-text">
-      <h3>
-        <span>Br</span>
-        <a @click="addY">
-          <span v-if="yCount < 13">{{ "y".repeat(yCount) }}</span>
-          <span v-else class="falling-y">{{ "y".repeat(yCount) }}</span> </a
-        >an Li
+      <h3 class="summary-header">
+        <div class="name-container">
+          <span>Br</span>
+          <span class="no-select">
+            <a @click="addY">
+              <span v-if="yCount < 13">{{ "y".repeat(yCount) }}</span>
+              <span v-else class="falling-y">{{ "y".repeat(yCount) }}</span> </a
+            >an Li
+          </span>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/bryxli" target="_blank">
+            <OhVueIcon name="bi-linkedin" inverse />
+          </a>
+          <a href="https://github.com/bryxli" target="_blank">
+            <OhVueIcon name="bi-github" inverse />
+          </a>
+          <a href="mailto:bryanzero765@gmail.com">
+            <OhVueIcon name="md-email" inverse />
+          </a>
+        </div>
       </h3>
       <p>
-        Hey there! I'm Bryan, local full stack engineer and cloud connoisseur. I
-        graduated from the University of Wisconsin-Madison with a B.S. in
-        computer science, data science, and digital studies. I love exploring
-        new tools and technologies. That's partially the reason you are on this
-        site now. I wanted to explore Astro further, and Astro Integrations
-        allowed me to create components using all kinds of frameworks, all in
-        one project. Please feel free to explore the site! Who knows? They say
-        there are thirteen y's in Bryan.
+        Hey there! I'm Bryan, local full stack engineer and cloud connoisseur
+        located in Chicago. I graduated from the University of Wisconsin-Madison
+        with a B.S. in computer science, data science, and digital studies. I
+        love exploring new tools and technologies. On this site, you can find
+        various projects that I have been working on. Please feel free to
+        explore the site! Who knows? They say there are thirteen y's in Bryan.
       </p>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onBeforeMount } from "vue";
+import { OhVueIcon, addIcons } from "oh-vue-icons";
+import { BiGithub, BiLinkedin, MdEmail } from "oh-vue-icons/icons";
 
 const yCount = ref(1);
 
@@ -33,6 +48,10 @@ const addY = () => {
     yCount.value++;
   }
 };
+
+onBeforeMount(() => {
+  addIcons(MdEmail, BiGithub, BiLinkedin);
+});
 </script>
 
 <style scoped>
@@ -56,9 +75,30 @@ const addY = () => {
   text-align: left;
 }
 
-.summary-text a {
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.no-select {
   user-select: none;
   cursor: text;
+}
+
+.social-links a OhVueIcon {
+  color: white;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.social-links a:hover OhVueIcon {
+  color: gray;
 }
 
 .falling-y {
