@@ -6,9 +6,12 @@
         <div class="name-container">
           <span>Br</span>
           <span class="no-select">
-            <a @click="addY">
-              <span v-if="yCount < 13">{{ "y".repeat(yCount) }}</span>
-              <span v-else class="falling-y">{{ "y".repeat(yCount) }}</span> </a
+            <span v-if="yCount < 13">
+              <a @click="addY">{{ yText }}</a>
+            </span>
+            <span v-else-if="yValue" class="success">{{ yText }}</span>
+            <span v-else>
+              <span class="falling-y">{{ yText }}</span> </span
             >an Li
           </span>
         </div>
@@ -37,15 +40,27 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onBeforeMount } from "vue";
+import { computed, ref, onBeforeMount } from "vue";
 import { OhVueIcon, addIcons } from "oh-vue-icons";
 import { BiGithub, BiLinkedin, MdEmail } from "oh-vue-icons/icons";
+import { useStore } from "@nanostores/vue";
+import { selector, y } from "../../store/optionsStore";
 
+const selectorValue = useStore(selector);
+const yValue = useStore(y);
 const yCount = ref(1);
+const complete = ref(false);
+const yText = computed(() => "y".repeat(yCount.value));
 
 const addY = () => {
   if (yCount.value < 13) {
     yCount.value++;
+  }
+  if (yCount.value === 13) {
+    if (selectorValue.value === 4) {
+      y.set(true);
+    }
+    complete.value = true;
   }
 };
 
@@ -106,11 +121,16 @@ onBeforeMount(() => {
   animation: fall 1s forwards;
 }
 
+.success {
+  color: yellow;
+}
+
 @keyframes fall {
   0% {
     transform: translateY(0);
     opacity: 1;
   }
+
   100% {
     transform: translateY(100px);
     opacity: 0;

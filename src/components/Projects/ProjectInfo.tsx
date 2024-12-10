@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/cjs/Card.js";
-import Icon from "./Icon";
-import type { ProjectProps } from "./types";
+import Icon from "../common/react/Icon";
+import type { ProjectProps } from "../common/types";
 
 const ProjectInfo: React.FC<ProjectProps> = ({
   title,
@@ -59,7 +59,7 @@ const ProjectInfo: React.FC<ProjectProps> = ({
               }}
             >
               {technologies.map((technology) => (
-                <Icon name={technology} key={technology} />
+                <Icon name={technology} nametag={true} key={technology} />
               ))}
             </div>
           )}

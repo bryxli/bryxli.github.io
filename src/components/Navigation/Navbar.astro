@@ -1,25 +1,26 @@
+---
+import Options from "./Options";
+
+const hoverColor = "#00bcd4";
+---
+
 <header class="navbar">
   <div class="logo">
     <a href="/">bryxli.github.io</a>
   </div>
   <nav>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><Options client:only="react" initialColor={hoverColor} /></li>
     </ul>
   </nav>
 </header>
 
 <style>
   .navbar {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    color: white;
   }
 
   .logo a {
@@ -40,9 +41,5 @@
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
-  }
-
-  nav a:hover {
-    color: #00bcd4;
   }
 </style>

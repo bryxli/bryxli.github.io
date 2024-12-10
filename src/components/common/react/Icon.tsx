@@ -22,8 +22,11 @@ import {
   SiAmazonrds as rdsLogo,
   SiJavascript as javascriptLogo,
 } from "react-icons/si";
-import { CiGlobe as cloudfrontLogo } from "react-icons/ci";
-import type { IconProps } from "./types";
+import {
+  CiGlobe as cloudfrontLogo,
+  CiCirclePlus as optionsButton,
+} from "react-icons/ci";
+import type { IconProps } from "../types";
 
 const iconMap: Record<string, React.ComponentType> = {
   python: pythonLogo,
@@ -44,6 +47,7 @@ const iconMap: Record<string, React.ComponentType> = {
   java: javaLogo,
   github: githubLogo,
   live: liveLogo,
+  options: optionsButton,
 };
 
 const renderIcon = (name: string) => {
@@ -51,11 +55,11 @@ const renderIcon = (name: string) => {
   return IconComponent ? <IconComponent /> : null;
 };
 
-const Icon: React.FC<IconProps> = ({ name }) => {
+const Icon: React.FC<IconProps> = ({ name, nametag = false }) => {
   return (
     <div>
       {renderIcon(name)}
-      <div>{name}</div>
+      {nametag && <div>{name}</div>}
     </div>
   );
 };
