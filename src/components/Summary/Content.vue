@@ -7,11 +7,13 @@
           <span>Br</span>
           <span class="no-select">
             <span v-if="yCount < 13">
-              <a @click="addY">{{ yText }}</a>
+              <a data-testid="y" @click="addY">{{ yText }}</a>
             </span>
-            <span v-else-if="yValue" class="success">{{ yText }}</span>
+            <span v-else-if="yValue" data-testid="y" class="success">{{
+              yText
+            }}</span>
             <span v-else>
-              <span class="falling-y">{{ yText }}</span> </span
+              <span data-testid="y" class="falling-y">{{ yText }}</span> </span
             >an Li
           </span>
         </div>

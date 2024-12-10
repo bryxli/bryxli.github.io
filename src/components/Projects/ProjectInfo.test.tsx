@@ -52,14 +52,10 @@ describe("components/Projects/ProjectInfo.tsx", () => {
   });
 
   // it("applies the selected border style when isSelected is true", () => {
-  //   render(<ProjectInfo {...project} isSelected />);
-  //   const card = screen.getByText(project.title).closest(".card");
-  //   expect(card?.getElementsByClassName).toHaveStyle("border: 3px solid #FFD700");
+
   // });
 
   // it("applies the default border style when isSelected is false", () => {
-  //   render(<ProjectInfo {...project} isSelected={false} />);
-  //   const card = screen.getByText(project.title).closest(".card");
-  //   expect(card).toHaveStyle("border: 3px solid #eee");
+
   // });
 });
