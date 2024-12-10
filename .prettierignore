@@ -3,5 +3,6 @@
 .prettierignore
 *.svg
 *.lock
+*.properties
 **/public/*
 **/assets/*
