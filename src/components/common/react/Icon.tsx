@@ -52,7 +52,7 @@ const iconMap: Record<string, React.ComponentType> = {
 
 const renderIcon = (name: string) => {
   const IconComponent = iconMap[name];
-  return IconComponent ? <IconComponent /> : null;
+  return IconComponent ? <IconComponent data-testid={`icon-${name}`} /> : null;
 };
 
 const Icon: React.FC<IconProps> = ({ name, nametag = false }) => {

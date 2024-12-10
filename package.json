@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "vitest --coverage --run"
   },
   "lint-staged": {
     "*": "prettier --write"
@@ -30,9 +31,16 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/vue": "^8.1.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitest/coverage-v8": "2.1.8",
     "husky": "^9.1.7",
+    "jsdom": "^25.0.1",
     "lint-staged": "^15.2.10",
     "prettier": "^3.4.2",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier-plugin-astro": "^0.14.1",
+    "vitest": "^2.1.8"
   }
 }

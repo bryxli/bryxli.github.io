@@ -59,7 +59,7 @@ const ProjectInfo: React.FC<ProjectProps> = ({
               }}
             >
               {technologies.map((technology) => (
-                <Icon name={technology} nametag={true} key={technology} />
+                <Icon name={technology} nametag key={technology} />
               ))}
             </div>
           )}
@@ -73,12 +73,12 @@ const ProjectInfo: React.FC<ProjectProps> = ({
           >
             {repoLink && (
               <a href={repoLink} target="_blank" rel="noopener noreferrer">
-                <Icon name="github" nametag={true} />
+                <Icon name="github" nametag />
               </a>
             )}
             {liveLink && (
               <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                <Icon name="live" nametag={true} />
+                <Icon name="live" nametag />
               </a>
             )}
           </div>
