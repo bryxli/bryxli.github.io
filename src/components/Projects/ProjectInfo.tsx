@@ -73,12 +73,12 @@ const ProjectInfo: React.FC<ProjectProps> = ({
           >
             {repoLink && (
               <a href={repoLink} target="_blank" rel="noopener noreferrer">
-                <Icon name="github" />
+                <Icon name="github" nametag={true} />
               </a>
             )}
             {liveLink && (
               <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                <Icon name="live" />
+                <Icon name="live" nametag={true} />
               </a>
             )}
           </div>
