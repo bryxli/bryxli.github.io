@@ -2,6 +2,7 @@
 import Summary from "../Summary/Content.vue";
 import ProjectList from "../Projects/ProjectList";
 import projects from "../../data/projects.json";
+import Game from "../Phaser/Game.vue";
 ---
 
 <div class="page center full-page" id="landing">
@@ -17,6 +18,7 @@ import projects from "../../data/projects.json";
 </div>
 
 <div class="page center" id="summary">
+  <Game client:only="vue" />
   <div class="bg">
     <Summary client:only="vue" />
   </div>

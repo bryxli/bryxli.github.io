@@ -12,7 +12,7 @@ export default defineConfig({
       include: ["**/Projects/*", "**/Navigation/Options.tsx"],
     }),
     vue({
-      include: ["**/Summary/*"],
+      include: ["**/Summary/*", "**/Phaser/*"],
     }),
   ],
 });
