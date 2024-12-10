@@ -9,9 +9,7 @@
             <span v-if="yCount < 13">
               <a @click="addY">{{ yText }}</a>
             </span>
-            <span v-else-if="selectorValue === 4" class="success">{{
-              yText
-            }}</span>
+            <span v-else-if="yValue" class="success">{{ yText }}</span>
             <span v-else>
               <span class="falling-y">{{ yText }}</span> </span
             >an Li
@@ -49,14 +47,20 @@ import { useStore } from "@nanostores/vue";
 import { selector, y } from "../../store/optionsStore";
 
 const selectorValue = useStore(selector);
+const yValue = useStore(y);
 const yCount = ref(1);
+const complete = ref(false);
 const yText = computed(() => "y".repeat(yCount.value));
 
 const addY = () => {
   if (yCount.value < 13) {
     yCount.value++;
-  } else {
-    y.set(true);
+  }
+  if (yCount.value === 13) {
+    if (selectorValue.value === 4) {
+      y.set(true);
+    }
+    complete.value = true;
   }
 };
 
@@ -126,6 +130,7 @@ onBeforeMount(() => {
     transform: translateY(0);
     opacity: 1;
   }
+
   100% {
     transform: translateY(100px);
     opacity: 0;
