@@ -9,6 +9,11 @@ export default defineConfig({
     environment: "jsdom",
     coverage: {
       reporter: ["text", "lcov"],
+      exclude: [
+        "**/astro.config.mjs",
+        "**/vitest.config.ts",
+        "**/.prettierrc.mjs",
+      ],
     },
   },
 });

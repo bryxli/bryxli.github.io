@@ -2,7 +2,7 @@ import { render, fireEvent, screen } from "@testing-library/vue";
 import { describe, it, expect } from "vitest";
 import Summary from "./Content.vue";
 
-describe("SummaryContent.vue", () => {
+describe("components/Summary/Content.vue", () => {
   it("renders content", () => {
     render(Summary);
     expect(screen.getByAltText("portrait")).toBeDefined();
