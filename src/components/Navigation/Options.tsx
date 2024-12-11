@@ -18,7 +18,8 @@ const Options: React.FC<OptionsProps> = ({ initialColor }) => {
     <div
       data-testid="options"
       onClick={handleClick}
-      style={{ color: colorOptions[selectorStore] }}
+      style={{ color: colorOptions[selectorStore], userSelect: "none" }}
+      role="button"
     >
       <Icon name="options" />
     </div>
