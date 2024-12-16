@@ -1,0 +1,45 @@
+---
+import Options from "./Options";
+
+const hoverColor = "#00bcd4";
+---
+
+<header class="navbar">
+  <div class="logo">
+    <a href="/">bryxli.github.io</a>
+  </div>
+  <nav>
+    <ul>
+      <li><Options client:only="react" initialColor={hoverColor} /></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+</style>

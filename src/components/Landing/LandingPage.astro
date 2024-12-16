@@ -1,0 +1,174 @@
+---
+import Summary from "../Summary/Content.vue";
+import ProjectList from "../Projects/ProjectList";
+import projects from "../../data/projects.json";
+---
+
+<div class="page center full-page" id="landing">
+  <div class="container">
+    <h1 class="heading-1">Hello, I'm <span>Bryan.</span></h1>
+    <p class="heading-2">
+      Full Stack Software Engineer, AWS Solutions Architect
+    </p>
+    <a href="#projects" class="btn-landing btn-white btn-animated">
+      View my Work
+    </a>
+  </div>
+</div>
+
+<div class="page center" id="summary">
+  <div class="bg">
+    <Summary client:only="vue" />
+  </div>
+</div>
+
+<div class="page center" id="projects">
+  <div class="bg">
+    <h1 class="heading-3">Projects</h1>
+    <div class="project-list">
+      <ProjectList client:only="react" projects={projects} />
+    </div>
+  </div>
+</div>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+
+  .page {
+    display: flex;
+    width: 100%;
+  }
+
+  .center {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .full-page {
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .bg {
+    background: rgba(28, 44, 53, 0.7);
+    width: 80%;
+  }
+
+  .heading-1 {
+    font-size: 5.2rem;
+    font-weight: 400;
+    margin: 2.6rem 0;
+    animation: moveInLeft 1.4s;
+  }
+
+  .heading-1 span {
+    color: #ffe066;
+  }
+
+  .heading-2 {
+    font-size: 2.4rem;
+    margin-bottom: 4.2rem;
+    animation: moveInRight 1.4s;
+  }
+
+  .heading-3 {
+    font-size: 1.8rem;
+  }
+
+  .project-list {
+    margin-top: 2rem;
+  }
+
+  .btn-landing {
+    padding: 1.4rem 4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffec99;
+    border: 2px solid #ffe066;
+    border-radius: 14px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    animation: moveInBottom 0.5s 0.75s backwards;
+  }
+
+  .btn-landing:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-landing:active {
+    transform: translateY(-1px);
+  }
+
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(4rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 52.5%;
+    }
+    .heading-1 {
+      font-size: 4rem;
+      line-height: 1.2;
+    }
+    .heading-2 {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+</style>

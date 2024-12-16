@@ -1,19 +1,47 @@
 {
-  "name": "phaser",
+  "name": "bryxli.github.io",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "prepare": "husky"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "prepare": "husky",
+    "test": "vitest --coverage --run"
   },
   "lint-staged": {
     "*": "prettier --write"
   },
   "dependencies": {
-    "phaser": "^3.87.0"
+    "@astrojs/react": "^4.0.0",
+    "@astrojs/vue": "^5.0.1",
+    "@nanostores/react": "^0.8.2",
+    "@nanostores/vue": "^0.11.0",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "astro": "^5.0.3",
+    "bootstrap": "^5.3.3",
+    "nanostores": "^0.11.3",
+    "oh-vue-icons": "^1.0.0-rc3",
+    "phaser": "^3.87.0",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.6",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/vue": "^8.1.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitest/coverage-v8": "2.1.8",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.11",
-    "prettier": "^3.4.2"
+    "jsdom": "^25.0.1",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "vitest": "^2.1.8"
   }
 }
