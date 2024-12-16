@@ -14,9 +14,9 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
 
   return (
     <div>
-      {projects.map((project, index) => (
+      {projects.map((project) => (
         <ProjectInfo
-          key={index}
+          key={project.title}
           title={project.title}
           description={project.description}
           technologies={project.technologies}

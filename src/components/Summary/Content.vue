@@ -3,9 +3,9 @@
     <img src="/summary/self.jpg" alt="portrait" class="summary-image" />
     <div class="summary-text">
       <h3 class="summary-header">
-        <div class="name-container">
+        <div class="name-container no-select">
           <span>Br</span>
-          <span class="no-select">
+          <span>
             <span v-if="yCount < 13">
               <a data-testid="y" @click="addY">{{ yText }}</a>
             </span>
@@ -108,13 +108,13 @@ onBeforeMount(() => {
   cursor: text;
 }
 
-.social-links a OhVueIcon {
+.social-links a {
   color: white;
   margin-left: 1rem;
   cursor: pointer;
 }
 
-.social-links a:hover OhVueIcon {
+.social-links a:hover {
   color: gray;
 }
 

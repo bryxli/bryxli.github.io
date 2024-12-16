@@ -6,10 +6,10 @@ describe("components/Options.tsx", () => {
   it("cycles through color options on click", () => {
     render(<Options initialColor="blue" />);
     const button = screen.getByTestId("options");
-    expect(button.style.getPropertyValue("color")).toBe("");
+    expect(button.style.getPropertyValue("color")).toBe("white");
 
     fireEvent.click(button);
-    expect(["", "red", "orange", "yellow"]).not.contains(
+    expect(["white", "red", "orange", "yellow"]).not.contains(
       button.style.getPropertyValue("color"),
     );
     fireEvent.click(button);
@@ -19,6 +19,6 @@ describe("components/Options.tsx", () => {
     fireEvent.click(button);
     expect(button.style.getPropertyValue("color")).toBe("yellow");
     fireEvent.click(button);
-    expect(button.style.getPropertyValue("color")).toBe("");
+    expect(button.style.getPropertyValue("color")).toBe("white");
   });
 });

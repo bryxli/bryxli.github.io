@@ -5,7 +5,7 @@ import Icon from "../common/react/Icon";
 import type { OptionsProps } from "../common/types";
 
 const Options: React.FC<OptionsProps> = ({ initialColor }) => {
-  const colorOptions = ["", initialColor, "red", "orange", "yellow"];
+  const colorOptions = ["white", initialColor, "red", "orange", "yellow"];
   const selectorStore = useStore(selector);
 
   const handleClick = () => {
@@ -15,13 +15,18 @@ const Options: React.FC<OptionsProps> = ({ initialColor }) => {
   };
 
   return (
-    <div
+    <button
       data-testid="options"
       onClick={handleClick}
-      style={{ color: colorOptions[selectorStore] }}
+      style={{
+        color: colorOptions[selectorStore],
+        userSelect: "none",
+        border: "none",
+        background: "none",
+      }}
     >
       <Icon name="options" />
-    </div>
+    </button>
   );
 };
 
