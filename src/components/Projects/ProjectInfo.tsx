@@ -53,6 +53,7 @@ const ProjectInfo: React.FC<ProjectProps> = ({
             <div
               style={{
                 display: "flex",
+                flexWrap: "wrap",
                 justifyContent: "center",
                 gap: "1rem",
                 paddingBottom: "0.5rem",

@@ -101,6 +101,7 @@ onBeforeMount(() => {
 .name-container {
   display: inline-flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .no-select {
