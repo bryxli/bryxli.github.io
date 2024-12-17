@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/cjs/Card.js";
+import { isMobile } from "react-device-detect";
 import Icon from "../common/react/Icon";
 import type { ProjectProps } from "../common/types";
 
@@ -14,7 +15,13 @@ const ProjectInfo: React.FC<ProjectProps> = ({
   onSelect,
 }) => {
   return (
-    <div style={{ paddingBottom: "1rem", margin: "auto", maxWidth: "50%" }}>
+    <div
+      style={{
+        paddingBottom: "1rem",
+        margin: "auto",
+        maxWidth: isMobile ? "80%" : "40%",
+      }}
+    >
       <Card
         style={{
           width: "100%",
@@ -25,10 +32,14 @@ const ProjectInfo: React.FC<ProjectProps> = ({
         }}
         onClick={onSelect}
         onMouseEnter={(e) => {
-          e.currentTarget.style.transform = "scale(1.05)";
+          if (!isMobile) {
+            e.currentTarget.style.transform = "scale(1.05)";
+          }
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.transform = "scale(1)";
+          if (!isMobile) {
+            e.currentTarget.style.transform = "scale(1)";
+          }
         }}
       >
         <Card.Body>
